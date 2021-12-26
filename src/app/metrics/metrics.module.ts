@@ -13,8 +13,5 @@ import { MetricsHomeComponent } from './metrics-home/metrics-home.component';
     CommonModule,
     MetricsRoutingModule
   ],
-  exports: [
-    MetricsHomeComponent
-  ]
 })
 export class MetricsModule { }
