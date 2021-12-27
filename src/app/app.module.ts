@@ -8,11 +8,13 @@ import { CollectionsModule } from './collections/collections.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ModalModule } from './modal/modal.module';
 import { ViewsModule } from './views/views.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
