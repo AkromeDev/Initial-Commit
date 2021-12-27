@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { MetricsModule } from './metrics/metrics.module';
 import { CollectionsModule } from './collections/collections.module';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ModalModule } from './modal/modal.module';
+import { ViewsModule } from './views/views.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppRoutingModule,
     MetricsModule,
     CollectionsModule,
+    ViewsModule,
+    ModalModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
