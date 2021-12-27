@@ -1,12 +1,12 @@
+const mode = process.env.TAILWIND_MODE ? 'jit' : 'aot';
+
 module.exports = {
-  mode: 'jit',
-  purge: [
-    './public/**/*.html',
-    './src/**/*.{js,jsx,ts,tsx,vue}',
-  ],
-  content: [],
+  mode: mode,
+  purge: ['./src/**/*.{html,ts}', './projects/**/*.{html,ts}'],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },
+  variants: {},
   plugins: [],
-}
+};
