@@ -10,7 +10,8 @@ section {
     animation: wave 10s infinite linear;
 }
 .wave {
-    background-image: url("https://assets.codepen.io/605876/wave--infinite.svg");
+    -webkit-mask: url("https://assets.codepen.io/605876/wave--infinite.svg") no-repeat center;
+    mask: url("https://assets.codepen.io/605876/wave--infinite.svg") no-repeat center;
     width: 500vw;
     height: 100px;
     animation: wave 20s infinite linear;
@@ -20,9 +21,11 @@ section {
 }
 .wave:nth-of-type(2) {
     animation: wave 20s linear infinite;
+    margin-top: -100px;
 }
 .wave:nth-of-type(3) {
     animation: wave 25s linear infinite;
+    margin-top: -100px;
 }
 footer {
     position: absolute;
